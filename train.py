@@ -142,9 +142,9 @@ def main():
     if config.cache_dataset:
         print('Caching datasets ...')
     train_dataset = ArabDataset(config.train_labels, config.train_wavs_path,
-                                cache=config.cache_dataset)
+                                config.cache_dataset)
     test_dataset = ArabDataset(config.test_labels, config.test_wavs_path,
-                               cache=config.cache_dataset)
+                               config.cache_dataset)
 
     # optional: balanced sampling
     sampler, shuffle, drop_last = None, True, True

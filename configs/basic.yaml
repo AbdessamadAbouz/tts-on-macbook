@@ -9,7 +9,7 @@ learning_rate: 1.0e-3
 weight_decay: 1.0e-6
 grad_clip_thresh: 1.0
 
-cache_dataset: True
+cache_dataset: False
 use_cuda_if_available: True
 
 balanced_sampling: False
